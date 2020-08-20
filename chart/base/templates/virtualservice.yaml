@@ -7,7 +7,7 @@ spec:
   hosts:
   - "*"
   gateways:
-  - inventory-gateway
+  - {{ include "starter-kit.fullname" . }}-gateway
   http:
   - match:
     - uri:
